@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 from __future__ import with_statement
 import ConfigParser
 import time
@@ -57,8 +57,8 @@ class Config:
         mailto_list = 'guohuai@b5m.com'
         # mailto_list = ['guohuai@b5m.com', '595220635@qq.com']  # 收件组
         mail_host = "smtp.163.com"  # 设置服务器
-        mail_user = "fish880111"  # 用户名
-        mail_pass = "godda870910"  # 口令
+        mail_user = "###"  # 用户名
+        mail_pass = "###"  # 口令
         mail_postfix = "163.com"  # 发件箱的后缀
         me = u'郭淮' + "<" + mail_user + "@" + mail_postfix + ">"
         report_path = ''.join((r'../report/', report_name))
