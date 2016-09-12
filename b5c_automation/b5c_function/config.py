@@ -57,15 +57,15 @@ class Config:
         mailto_list = 'guohuai@gshopper.com'
         # mailto_list = ['guohuai@b5m.com', '595220635@qq.com']  # 收件组
         mail_host = "smtp.163.com"  # 设置服务器
-        mail_user = "#"  # 用户名
-        mail_pass = "#"  # 口令
-        mail_postfix = "163.com"  # 发件箱的后缀
+        mail_user = "###"  # 用户名
+        mail_pass = "###"  # 口令
+        mail_postfix = "163.com"  # 发件箱的后缀s
         me = u'郭淮' + "<" + mail_user + "@" + mail_postfix + ">"
         report_path = ''.join((os.getcwd(), '\\report\\', report_name))
         try:
             with open(report_path, 'r') as f:
                 content = f.read()
-                print 'mail is sending...' 
+                print 'mail is sending...'
         except IOError, e:
             logging.error(e)
         # msg = MIMEText(content, 'html', _charset='utf-8')
@@ -79,12 +79,6 @@ class Config:
         msg.attach(body)
 
         '''添加html附件'''
-        # try:
-        #     filename = ''.join(('report\\', report_name))
-        #     with open(filename, 'r') as ff:
-        #         a = ff.read()
-        # except IOError, e:
-        #     logging.error(e)
         att = MIMEApplication(content, _subtype="html")
         att.add_header('Content-Disposition', 'attachment', filename=report_name)
         msg.attach(att)

@@ -6,6 +6,7 @@ class GetElements:
 
     def __init__(self, driver):
         self.element = Function(driver)
+
     def login_element(self):
         """登录按钮"""
         return self.element.findXpath('//*[@id="b5c_wrap"]/div[1]/div/div[2]/div/a[1]')
