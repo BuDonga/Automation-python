@@ -65,7 +65,7 @@ class Config:
         try:
             with open(report_path, 'r') as f:
                 content = f.read()
-                print 'mail is sending...'
+                print 'mail is sending...' 
         except IOError, e:
             logging.error(e)
         # msg = MIMEText(content, 'html', _charset='utf-8')

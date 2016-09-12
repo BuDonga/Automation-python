@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83ad9f2c-07df-49f3-9c5e-b87c4ec13690" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/b5c_automation/report/TestReport_2016-09-02-18_07_02.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/b5c_automation/report/TestReport_2016-09-02-18_07_40.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/b5c_automation/report/TestReport_2016-09-12-10_34_17.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/b5c_automation/report/TestReport_2016-09-12-10_45_40.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/b5c_automation/report/TestReport_2016-09-12-10_49_52.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/b5c_automation/report/TestReport_2016-09-12-10_55_31.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/b5c_automation/report/TestReport_2016-09-12-11_04_23.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/b5c_automation/report/TestReport_2016-09-12-11_11_45.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/b5c_automation/report/TestReport_2016-09-12-11_13_12.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/b5c_automation/report/TestReport_2016-09-12-11_16_32.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/b5c_automation/b5c_function/config.py" afterPath="$PROJECT_DIR$/b5c_automation/b5c_function/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/b5c_automation/suite_test.py" afterPath="$PROJECT_DIR$/b5c_automation/suite_test.py" />
     </list>
     <ignored path="python project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_function/config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="426">
-              <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
+              <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -675,7 +663,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2171875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1028,7 +1016,7 @@
     <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_function/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
-          <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
+          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
           <folding />
         </state>
       </provider>
