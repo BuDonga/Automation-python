@@ -9,7 +9,6 @@ import logging
 class MainPage:
     def __init__(self, dr):
         self.dr = dr
-        #self.dr = webdriver.Chrome()
         self.element = GetElements(self.dr)
         self.f = Function(self.dr)
         Config().log_conf()
@@ -28,5 +27,5 @@ class MainPage:
 
     def cls(self):
         if self.dr:
-            self.dr.close()
+            self.dr.quit()
             self.dr = None

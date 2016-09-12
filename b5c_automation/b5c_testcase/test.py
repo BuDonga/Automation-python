@@ -9,7 +9,7 @@ from email.mime import application
 from email.mime.text import MIMEText
 from email.header import Header
 from email.mime.multipart import MIMEMultipart
-from b5c_automation.b5c_function.config import *
+from b5c_function.config import *
 import os
 
 """得到最新的Test Report"""

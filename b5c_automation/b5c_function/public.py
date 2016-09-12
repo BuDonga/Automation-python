@@ -21,7 +21,6 @@ class Function:
         files = os.listdir(r'../snapshot')
         if file_name not in files:
             os.mkdir(''.join(('../snapshot', '//', file_name)))
-            print os.getcwd()
         self.driver.get_screenshot_as_file(''.join(('../snapshot', '//', file_name, '//', shapshot_name, '_', filename,
                                            '.png')))
 

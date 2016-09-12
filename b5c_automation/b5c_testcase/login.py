@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import unittest
-#from selenium import webdriver
+from selenium import webdriver
 import logging
-#from b5c_automation.b5c_function.config import *
-#from b5c_automation.b5c_function.public import *
+from b5c_automation.b5c_function.config import *
+from b5c_automation.b5c_function.public import *
 from b5c_automation.b5c_business.mainpage_business import *
 from b5c_automation.b5c_elements.mainpage_elements import *
 
@@ -15,7 +15,7 @@ class Login(unittest.TestCase):
         self.f = Function(self.driver)
         self.m = MainPage(self.driver)
         self.e = GetElements(self.driver)
-        Config.log_conf()
+        self.conf.log_conf()
         self.base_url = "http://b5cai.stage.com/"
         self.f.driver_start(self.base_url, 3)
 

@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from __future__ import with_statement
 import ConfigParser
 import time
@@ -17,24 +17,24 @@ class Config:
 
     def getValue(self, con, key):
         """取得配置文件的值"""
-        with open(r'..\sys.conf', 'r') as cfgfile:
+        with open(r'sys.conf', 'r') as cfgfile:
             self.config.readfp(cfgfile)
         value = self.config.get(con, key)
         return value
 
     def setValue(self, con, key, value):
         """设置配置文件的值，如果没有，则创建"""
-        with open(r'..\sys.conf', 'r') as cfgfile:
+        with open(r'sys.conf', 'r') as cfgfile:
             self.config.readfp(cfgfile)
         try:
             self.config.set(con, key, value)
-            cfgfile = open(r'..\sys.conf', 'r+')
+            cfgfile = open(r'sys.conf', 'r+')
             self.config.write(cfgfile)
         except Exception as e:
             print e
             self.config.add_section(con)
             self.config.set(con, key, value)
-            cfgfile = open(r'..\sys.conf', 'w')
+            cfgfile = open(r'sys.conf', 'w')
             self.config.write(cfgfile)
         finally:
             cfgfile.close()
@@ -46,22 +46,26 @@ class Config:
         logging.basicConfig(level=logging.INFO,
                             format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
                             datefmt='%a, %d %b %Y %H:%M:%S',
-                            filename=os.path.join(os.getcwd(), '..\\log\\', log_name),
+                            filename=os.path.join(os.getcwd(), 'log', log_name),
                             filemode='a')
 
     @staticmethod
     def send_mail():
-        """发送邮件"""
+        '''发送邮件'''
         Config.log_conf()
         report_name = Config.get_newest_report()  # 得到最新生成的report名字
-        mailto_list = 'guohuai@b5m.com'
+        mailto_list = 'guohuai@gshopper.com'
         # mailto_list = ['guohuai@b5m.com', '595220635@qq.com']  # 收件组
         mail_host = "smtp.163.com"  # 设置服务器
         mail_user = "###"  # 用户名
         mail_pass = "###"  # 口令
         mail_postfix = "163.com"  # 发件箱的后缀
         me = u'郭淮' + "<" + mail_user + "@" + mail_postfix + ">"
-        report_path = ''.join((r'../report/', report_name))
+        report_path = ''.join((os.getcwd(), '\\report\\', report_name))
+        #report_path = r'E:\python project\b5c_automation\report\TestReport_2016-09-12-11_11_45.html'
+
+        print ''.join((os.getcwd(), '\\report\\', report_name))
+        print report_path
         try:
             with open(report_path) as f:
                 content = f.read()
@@ -70,12 +74,17 @@ class Config:
             logging.error(e)
         # msg = MIMEText(content, 'html', _charset='utf-8')
         msg = MIMEMultipart()
-        body = MIMEText(content, 'html', _charset='utf-8')
+        try:
+            print content
+            body = MIMEText(content, 'html', _charset='utf-8')
+        except IOError, e:
+            logging.error('文件未找到')
+            print '文件未找到'
         msg.attach(body)
 
         '''添加html附件'''
         try:
-            filename = ''.join(('..\\report\\', report_name))
+            filename = ''.join(('report\\', report_name))
             with open(filename) as ff:
                 a = ff.read()
         except IOError, e:
@@ -112,24 +121,25 @@ class Config:
             d：存储所有文件的创建时间，并且倒序排列，最新的创建时间是d[0]
             c[d[0]]:返回最新创建时间所对应的文件名，即是最新的测试报告
         """
-        a = os.listdir(r'..\report')
+        a = os.listdir('report')
         c = {}
         for b in a:
-            c[os.stat(''.join(('..\\report\\', b))).st_atime] = b
-            d = sorted(c.keys(), reverse=True)
+            c[os.stat(''.join(('report\\', b))).st_atime] = b
+        d = sorted(c.keys(), reverse=True)
         return c[d[0]]
 
 
 if __name__ == '__main__':
-    with open(r'..\report\TestReport_2016-08-17-16_25_29.html') as f:
+    os.chdir('../')
+    with open(r'E:\python project\b5c_automation\report\TestReport_2016-09-09-20_10_46.html') as f:
         cont = f.read()
         print 'mail is sending...'
-    if Config.send_mail("帮5采自动化测试报告", cont):
+    if Config.send_mail():
         print "发送成功"
-        logging.info('发送成功')
+
     else:
         print "发送失败"
-        logging.info('发送失败')
+
 
 # if __name__ == '__main__':
 #     print os.getcwd()
