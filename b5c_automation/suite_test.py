@@ -21,6 +21,7 @@ if __name__ == '__main__':
     '''设置报告格式，并生成'''
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'帮5采自动化测试用例', description=u'用例运行情况')
     runner.run(testUnit)
+    fp.close()
     print 'report is finished'
 
     '''发送邮件'''

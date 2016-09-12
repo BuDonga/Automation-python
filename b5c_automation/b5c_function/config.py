@@ -57,17 +57,13 @@ class Config:
         mailto_list = 'guohuai@gshopper.com'
         # mailto_list = ['guohuai@b5m.com', '595220635@qq.com']  # 收件组
         mail_host = "smtp.163.com"  # 设置服务器
-        mail_user = "###"  # 用户名
-        mail_pass = "###"  # 口令
+        mail_user = "#"  # 用户名
+        mail_pass = "#"  # 口令
         mail_postfix = "163.com"  # 发件箱的后缀
         me = u'郭淮' + "<" + mail_user + "@" + mail_postfix + ">"
         report_path = ''.join((os.getcwd(), '\\report\\', report_name))
-        #report_path = r'E:\python project\b5c_automation\report\TestReport_2016-09-12-11_11_45.html'
-
-        print ''.join((os.getcwd(), '\\report\\', report_name))
-        print report_path
         try:
-            with open(report_path) as f:
+            with open(report_path, 'r') as f:
                 content = f.read()
                 print 'mail is sending...'
         except IOError, e:
@@ -75,21 +71,21 @@ class Config:
         # msg = MIMEText(content, 'html', _charset='utf-8')
         msg = MIMEMultipart()
         try:
-            print content
             body = MIMEText(content, 'html', _charset='utf-8')
         except IOError, e:
             logging.error('文件未找到')
+            logging.error(e)
             print '文件未找到'
         msg.attach(body)
 
         '''添加html附件'''
-        try:
-            filename = ''.join(('report\\', report_name))
-            with open(filename) as ff:
-                a = ff.read()
-        except IOError, e:
-            logging.error(e)
-        att = MIMEApplication(a, _subtype="html")
+        # try:
+        #     filename = ''.join(('report\\', report_name))
+        #     with open(filename, 'r') as ff:
+        #         a = ff.read()
+        # except IOError, e:
+        #     logging.error(e)
+        att = MIMEApplication(content, _subtype="html")
         att.add_header('Content-Disposition', 'attachment', filename=report_name)
         msg.attach(att)
 
