@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 import logging
+
+import shutil
 from selenium import webdriver
 import config
-import time, os
+import time
+import os
 
 
 class Function:
@@ -17,17 +20,28 @@ class Function:
         在snapshot目录下存入snapshot，如果没有当前时间的目录，则创建，反之，存入当前日期的目录
         """
         file_name = time.strftime('%Y%m%d', time.localtime())
-        shapshot_name = time.strftime('%Y%m%d%H%M%S', time.localtime())
+        shapshot_name = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime())
         files = os.listdir(r'../snapshot')
         if file_name not in files:
             os.mkdir(''.join(('../snapshot', '//', file_name)))
         self.driver.get_screenshot_as_file(''.join(('../snapshot', '//', file_name, '//', shapshot_name, '_', filename,
                                            '.png')))
 
+    @staticmethod
+    def delete_snapshot():
+        """删除当天目录下的所有截图文件"""
+        path_date = time.strftime('%Y%m%d', time.localtime())
+        path = '..\\snapshot\\' + path_date + '\\'
+        file_list = os.listdir(path)
+        for file in file_list:
+            file_path = ''.join((path, file))
+            if os.path.isfile(file_path):
+                os.remove(file_path)
+            elif os.path.isdir(file_path):
+                shutil.rmtree(file_path, True)
+
     def has_load_page_succeed(self, url):
-        """
-        初始化，并且登录url
-        """
+        """初始化，并且登录url"""
         try:
             self.driver.maximize_window()
             self.driver.implicitly_wait(self.conf.getValue('Time', 'implicitly_wait'))
@@ -55,10 +69,7 @@ class Function:
         if index == times & suspend:
             raise RuntimeError(u'无法启动浏览器，请检查！！！')
 
-
-
-
-    '''定位单个元素封装'''
+    """定位单个元素封装"""
     def findId(self, id):
         return self.driver.find_element_by_id(id)
 
@@ -83,8 +94,7 @@ class Function:
     def findXpath(self, xpath):
         return self.driver.find_element_by_xpath(xpath)
 
-    '''定位多个元素封装'''
-
+    """定位多个元素封装"""
     def findsId(self, id):
         return self.driver.find_elements_by_id(id)
 

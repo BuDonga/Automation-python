@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
 from b5c_automation.b5c_function.config import *
-from b5c_automation.b5c_function.public import *
 from b5c_automation.b5c_elements.mainpage_elements import *
-from selenium import webdriver
 import logging
 
 
 class MainPage:
-    def __init__(self, dr):
-        self.dr = dr
-        self.element = GetElements(self.dr)
-        self.f = Function(self.dr)
+    def __init__(self, driver):
+        self.driver = driver
+        self.element = GetElements(self.driver)
+        self.f = Function(self.driver)
+        self.e = GetElements(self.driver)
         Config().log_conf()
 
     def login(self, account, password):
+        """登录"""
         try:
             self.element.login_element().click()
             self.element.account_element().send_keys(account)
@@ -24,8 +24,17 @@ class MainPage:
         except Exception, e:
             logging.info(e)
             self.f.get_snapshot('Login')
+            raise AssertionError
+
+    def my_b5c(self):
+        self.e.my_information().click()
+        time.sleep(2)
+        logging.info('当前的url是：%s' % self.driver.current_url)
 
     def cls(self):
-        if self.dr:
-            self.dr.quit()
-            self.dr = None
+        if self.driver:
+            self.driver.quit()
+            self.driver = None
+        logging.info('=' * 30)
+        logging.info('\n' * 2)
+

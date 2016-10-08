@@ -17,8 +17,7 @@ class Config:
 
     def getValue(self, con, key):
         """取得配置文件的值"""
-        with open(r'sys.conf', 'r') as cfgfile:
-            self.config.readfp(cfgfile)
+        self.config.read('..\\sys.conf')
         value = self.config.get(con, key)
         return value
 
@@ -46,12 +45,12 @@ class Config:
         logging.basicConfig(level=logging.INFO,
                             format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
                             datefmt='%a, %d %b %Y %H:%M:%S',
-                            filename=os.path.join(os.getcwd(), 'log', log_name),
+                            filename=os.path.join(os.getcwd(),'..\\' 'log', log_name),
                             filemode='a')
 
     @staticmethod
     def send_mail():
-        '''发送邮件'''
+        """发送邮件"""
         Config.log_conf()
         report_name = Config.get_newest_report()  # 得到最新生成的report名字
         mailto_list = 'guohuai@gshopper.com'
@@ -61,7 +60,7 @@ class Config:
         mail_pass = "###"  # 口令
         mail_postfix = "163.com"  # 发件箱的后缀s
         me = u'郭淮' + "<" + mail_user + "@" + mail_postfix + ">"
-        report_path = ''.join((os.getcwd(), '\\report\\', report_name))
+        report_path = ''.join(('..\\', 'report\\', report_name))
         try:
             with open(report_path, 'r') as f:
                 content = f.read()
@@ -111,30 +110,38 @@ class Config:
             d：存储所有文件的创建时间，并且倒序排列，最新的创建时间是d[0]
             c[d[0]]:返回最新创建时间所对应的文件名，即是最新的测试报告
         """
-        a = os.listdir('report')
+        a = os.listdir('..\\report')
         c = {}
         for b in a:
-            c[os.stat(''.join(('report\\', b))).st_atime] = b
+            c[os.stat(''.join(('..\\report\\', b))).st_atime] = b
         d = sorted(c.keys(), reverse=True)
         return c[d[0]]
 
 
-if __name__ == '__main__':
-    os.chdir('../')
-    with open(r'E:\python project\b5c_automation\report\TestReport_2016-09-09-20_10_46.html') as f:
-        cont = f.read()
-        print 'mail is sending...'
-    if Config.send_mail():
-        print "发送成功"
-
-    else:
-        print "发送失败"
-
-
 # if __name__ == '__main__':
-#     print os.getcwd()
-#     a = Config()
-#     print 'haha'
-#     b = a.getValue('Path', 'chrome_path')
-#     print b
-#     a.setValue('haha1ha','1223','gggd')
+#     os.chdir('../')
+#     with open(r'E:\python project\b5c_automation\report\TestReport_2016-09-09-20_10_46.html') as f:
+#         cont = f.read()
+#         print 'mail is sending...'
+#     if Config.send_mail():
+#         print "发送成功"
+#
+#     else:
+#         print "发送失败"
+
+
+if __name__ == '__main__':
+    # a = Config()
+    # a.config.read('..\\sys.conf')
+    # b = a.config.sections()
+    # print b
+    # c = a.config.options('Path')
+    # print c
+    # d = a.config.items('Path')
+    # print d
+    # e = a.config.get('Path', 'chrome_path')
+    # print e
+    a = Config()
+    b = a.getValue('Path', 'chrome_path')
+    print b
+

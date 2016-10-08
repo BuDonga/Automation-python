@@ -9,30 +9,24 @@ from email.mime import application
 from email.mime.text import MIMEText
 from email.header import Header
 from email.mime.multipart import MIMEMultipart
-from b5c_function.config import *
 import os
+import shutil
 
-"""得到最新的Test Report"""
-def get_newest_report():
-    a = os.listdir(r'..\report')
-    c = {}
-    for b in a:
-        c[os.stat(''.join(('..\\report\\', b))).st_atime] = b
-        d = sorted(c.keys(), reverse=True)
-    return c[d[0]]
+
 
 
 if __name__ == '__main__':
-    print get_newest_file()
+    pass
+    # path_date = time.strftime('%Y%m%d', time.localtime())
+    # path = '..\\snapshot\\' + path_date + '\\'
+    # file_list = os.listdir(path)
+    # for file in file_list:
+    #     print file
+    #     file_path = ''.join((path, file))
+    #     print file_path
+    #     if os.path.isfile(file_path):
+    #         os.remove(file_path)
+    #     elif os.path.isdir(file_path):
+    #         shutil.rmtree(file_path, True)
 
-# c = []
-# for b in a:
-#     c.append(b.split('TestReport_')[1].split('.html')[0])
-# print c
-# d = c.sort()
-# e = c.reverse()
-# print d
-# print e
-#
-# os.stat()
 
