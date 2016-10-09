@@ -35,6 +35,8 @@ class MainPage:
         if self.driver:
             self.driver.quit()
             self.driver = None
+        print '=' * 30
+        print '\n' * 2
         logging.info('=' * 30)
         logging.info('\n' * 2)
 
