@@ -48,17 +48,16 @@ class Config:
                             filename=os.path.join(os.getcwd(),'..\\' 'log', log_name),
                             filemode='a')
 
-    @staticmethod
-    def send_mail():
+    def send_mail(self):
         """发送邮件"""
         Config.log_conf()
         report_name = Config.get_newest_report()  # 得到最新生成的report名字
-        mailto_list = 'guohuai@gshopper.com'
+        mailto_list = self.getValue('MAIL', 'mailto_list')
         # mailto_list = ['guohuai@b5m.com', '595220635@qq.com']  # 收件组
-        mail_host = "smtp.163.com"  # 设置服务器
-        mail_user = "###"  # 用户名
-        mail_pass = "###"  # 口令
-        mail_postfix = "163.com"  # 发件箱的后缀s
+        mail_host = self.getValue('MAIL', 'mail_host')  # 设置服务器
+        mail_user = self.getValue('MAIL', 'mail_user')  # 用户名
+        mail_pass = self.getValue('MAIL', 'mail_password')  # 口令
+        mail_postfix = self.getValue('MAIL', 'mail_postfix')  # 发件箱的后缀
         me = u'郭淮' + "<" + mail_user + "@" + mail_postfix + ">"
         report_path = ''.join(('..\\', 'report\\', report_name))
         try:

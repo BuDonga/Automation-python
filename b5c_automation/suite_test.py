@@ -10,7 +10,7 @@ if __name__ == '__main__':
     os.chdir('b5c_testcase\\')
 
     """删除当天目录下的截图文件"""
-    Function.delete_snapshot()
+    #Function.delete_snapshot()
 
     """需要跑的case"""
     allCases = [
@@ -33,7 +33,8 @@ if __name__ == '__main__':
     print 'report is finished'
 
     """发送邮件"""
-    if Config.send_mail():
+    a = Config()
+    if a.send_mail():
         print "Sending OK!"
     else:
         print "Sending failed!"
