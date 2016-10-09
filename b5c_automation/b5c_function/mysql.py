@@ -4,9 +4,9 @@ import MySQLdb
 
 
 class MySQL:
-    def __init__(self):
+    def __init__(self, ip, user, password, db_name):
         try:
-            self.db = MySQLdb.connect('localhost', 'root', 'admin', 'Mysql')
+            self.db = MySQLdb.connect(ip, user, password, db_name)
         except Exception, e:
             print e
             raise IOError('connection failed')
@@ -54,8 +54,10 @@ class MySQL:
             print '删除失败！！'
             print e
 
+
 if __name__ == '__main__':
-    a = MySQL()
+    """select"""
+    a = MySQL('localhost', 'root', 'admin', 'Mysql')
     sql = "SELECT * FROM test WHERE sex = 'male'"
     try:
         result = a.select(sql)
@@ -79,18 +81,20 @@ if __name__ == '__main__':
     print c
     print b
 
-
-    b = MySQL()
+    """insert"""
+    b = MySQL('localhost', 'root', 'admin', 'Mysql')
     sql2 = "INSERT INTO `mysql`.`test` (`no`, `name`, `sex`, `age`) VALUES ('4', 'godda', 'male', '38')"
     b.insert(sql2)
     b.close()
 
-    c = MySQL()
+    """update"""
+    c = MySQL('localhost', 'root', 'admin', 'Mysql')
     sql3 = "UPDATE `mysql`.`test` SET `sex`='m' WHERE (`sex`='male')"
     c.update(sql3)
     c.close()
 
-    d = MySQL()
+    """delete"""
+    d = MySQL('localhost', 'root', 'admin', 'Mysql')
     sql4 = "DELETE FROM `mysql`.`test` WHERE no = '4'"
     d.delete(sql4)
     d.close()

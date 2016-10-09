@@ -118,16 +118,7 @@ class Config:
         return c[d[0]]
 
 
-# if __name__ == '__main__':
-#     os.chdir('../')
-#     with open(r'E:\python project\b5c_automation\report\TestReport_2016-09-09-20_10_46.html') as f:
-#         cont = f.read()
-#         print 'mail is sending...'
-#     if Config.send_mail():
-#         print "发送成功"
-#
-#     else:
-#         print "发送失败"
+
 
 
 if __name__ == '__main__':

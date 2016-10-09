@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83ad9f2c-07df-49f3-9c5e-b87c4ec13690" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/b5c_automation/b5c_business/payment_business.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/b5c_automation/b5c_elements/my_information_elements.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/b5c_automation/b5c_testcase/payment.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/b5c_automation/b5c_function/mysql.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/b5c_automation/b5c_testcase/test1.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/b5c_automation/b5c_business/mainpage_business.py" afterPath="$PROJECT_DIR$/b5c_automation/b5c_business/mainpage_business.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/b5c_automation/b5c_elements/mainpage_elements.py" afterPath="$PROJECT_DIR$/b5c_automation/b5c_elements/mainpage_elements.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/b5c_automation/b5c_function/config.py" afterPath="$PROJECT_DIR$/b5c_automation/b5c_function/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/b5c_automation/b5c_function/public.py" afterPath="$PROJECT_DIR$/b5c_automation/b5c_function/public.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/b5c_automation/b5c_testcase/login.py" afterPath="$PROJECT_DIR$/b5c_automation/b5c_testcase/login.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/b5c_automation/b5c_testcase/test.py" afterPath="$PROJECT_DIR$/b5c_automation/b5c_testcase/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/b5c_automation/suite_test.py" afterPath="$PROJECT_DIR$/b5c_automation/suite_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/b5c_automation/sys.conf" afterPath="$PROJECT_DIR$/b5c_automation/sys.conf" />
     </list>
     <ignored path="python project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,10 +34,11 @@
     <SUITE FILE_PATH="coverage/auto_python$Unittests_in_Login__2_.coverage" NAME="Unittests in Login (2) Coverage Results" MODIFIED="1475047173786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
     <SUITE FILE_PATH="coverage/python project$Unittests_in_Login__2_.coverage" NAME="Unittests in Login (2) Coverage Results" MODIFIED="1471344012722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
     <SUITE FILE_PATH="coverage/auto_python$Unittests_in_Login.coverage" NAME="Unittests in Login Coverage Results" MODIFIED="1475047416681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
+    <SUITE FILE_PATH="coverage/auto_python$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1476002928725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
     <SUITE FILE_PATH="coverage/auto_python$Unittests_in_Login__3_.coverage" NAME="Unittests in Login (3) Coverage Results" MODIFIED="1475047315804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
     <SUITE FILE_PATH="coverage/auto_python$Unittest_Payment_test_payment_qiugou_enterprise.coverage" NAME="Unittest Payment.test_payment_qiugou_enterprise Coverage Results" MODIFIED="1475892291176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
     <SUITE FILE_PATH="coverage/python project$Unittests_in_Login__5_.coverage" NAME="Unittests in Login (5) Coverage Results" MODIFIED="1471344515918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
-    <SUITE FILE_PATH="coverage/auto_python$test.coverage" NAME="test Coverage Results" MODIFIED="1475136546508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
+    <SUITE FILE_PATH="coverage/auto_python$test.coverage" NAME="test Coverage Results" MODIFIED="1476002603877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
     <SUITE FILE_PATH="coverage/auto_python$Unittests_in_payment.coverage" NAME="Unittests in payment Coverage Results" MODIFIED="1475134067273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
     <SUITE FILE_PATH="coverage/python project$suite_test.coverage" NAME="suite_test Coverage Results" MODIFIED="1471436800308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation" />
     <SUITE FILE_PATH="coverage/python project$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1470996989775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
@@ -75,6 +69,7 @@
     <SUITE FILE_PATH="coverage/python project$sub.coverage" NAME="sub Coverage Results" MODIFIED="1469536394203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/python project$Unittest_Login_test_login__4_.coverage" NAME="Unittest Login.test_login (4) Coverage Results" MODIFIED="1471439778175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
     <SUITE FILE_PATH="coverage/auto_python$payment_business.coverage" NAME="payment_business Coverage Results" MODIFIED="1475220643919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_business" />
+    <SUITE FILE_PATH="coverage/auto_python$mysql.coverage" NAME="mysql Coverage Results" MODIFIED="1476003215341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_function" />
     <SUITE FILE_PATH="coverage/python project$public.coverage" NAME="public Coverage Results" MODIFIED="1470821416917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_function" />
     <SUITE FILE_PATH="coverage/python project$config.coverage" NAME="config Coverage Results" MODIFIED="1471426985681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_function" />
     <SUITE FILE_PATH="coverage/auto_python$Unittests_in_Login__5_.coverage" NAME="Unittests in Login (5) Coverage Results" MODIFIED="1475047299583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
@@ -111,11 +106,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_function/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2369">
-              <caret line="112" column="36" selection-start-line="112" selection-start-column="36" selection-end-line="112" selection-end-column="36" />
+            <state relative-caret-position="954">
+              <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="public.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_function/public.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+              <folding>
+                <element signature="e#24#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_function/mysql.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+              <folding>
+                <element signature="e#24#61#0" expanded="true" />
+                <marker date="1476003243569" expanded="true" signature="1581:1618" ph="SELECT * FRO... test" />
+                <marker date="1476003243569" expanded="true" signature="2144:2235" ph="INSERT INTO `mysql`.`test`... " />
+                <marker date="1476003243569" expanded="true" signature="2353:2409" ph="UPDATE `mysq... " />
+                <marker date="1476003243569" expanded="true" signature="2527:2568" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_testcase/test1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -124,7 +157,7 @@
       <file leaf-file-name="payment_business.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_business/payment_business.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
+            <state relative-caret-position="2047">
               <caret line="92" column="23" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="27" />
               <folding>
                 <element signature="e#24#72#0" expanded="true" />
@@ -136,7 +169,7 @@
       <file leaf-file-name="mainpage_elements.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_elements/mainpage_elements.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
+            <state relative-caret-position="161">
               <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
               <folding>
                 <element signature="e#24#72#0" expanded="true" />
@@ -148,11 +181,27 @@
       <file leaf-file-name="payment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_testcase/payment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1089">
+            <state relative-caret-position="2599">
               <caret line="163" column="62" selection-start-line="163" selection-start-column="62" selection-end-line="163" selection-end-column="62" />
               <folding>
                 <element signature="e#24#39#0" expanded="true" />
                 <element signature="e#2693#4391#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_testcase/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="74" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="74" />
+              <folding>
+                <element signature="e#24#61#0" expanded="true" />
+                <marker date="1476002599247" expanded="true" signature="1507:1544" ph="SELECT * FRO... test" />
+                <marker date="1476002599247" expanded="true" signature="2017:2108" ph="INSERT INTO `mysql`.`test`... " />
+                <marker date="1476002599247" expanded="true" signature="2172:2228" ph="UPDATE `mysq... " />
+                <marker date="1476002599247" expanded="true" signature="2292:2333" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -202,14 +251,16 @@
         <option value="$PROJECT_DIR$/b5c_automation/sys.conf" />
         <option value="$PROJECT_DIR$/b5c_automation/b5c_testcase/login.py" />
         <option value="$PROJECT_DIR$/b5c_automation/b5c_elements/mainpage_elements.py" />
-        <option value="$PROJECT_DIR$/b5c_automation/b5c_testcase/test.py" />
         <option value="$PROJECT_DIR$/b5c_automation/b5c_business/mainpage_business.py" />
         <option value="$PROJECT_DIR$/b5c_automation/b5c_function/public.py" />
         <option value="$PROJECT_DIR$/b5c_automation/b5c_elements/my_information_elements.py" />
         <option value="$PROJECT_DIR$/b5c_automation/b5c_business/payment_business.py" />
         <option value="$PROJECT_DIR$/b5c_automation/b5c_testcase/payment.py" />
         <option value="$PROJECT_DIR$/b5c_automation/suite_test.py" />
+        <option value="$PROJECT_DIR$/b5c_automation/b5c_testcase/test.py" />
+        <option value="$PROJECT_DIR$/b5c_automation/b5c_testcase/test1.py" />
         <option value="$PROJECT_DIR$/b5c_automation/b5c_function/config.py" />
+        <option value="$PROJECT_DIR$/b5c_automation/b5c_function/mysql.py" />
       </list>
     </option>
   </component>
@@ -305,24 +356,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="snapshot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="b5c_automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="b5c_testcase" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -400,76 +433,7 @@
       <recent name="E:\python project\b5c_automation\b5c_testcase" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.suite_test">
-    <configuration default="false" name="Unittest Payment.test_payment_qiugou_individual" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python project" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/b5c_automation/b5c_testcase/payment.py" />
-      <option name="CLASS_NAME" value="Payment" />
-      <option name="METHOD_NAME" value="test_payment_qiugou_individual" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest Payment.test_payment_yijiandaifa_enterprise" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python project" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/b5c_automation/b5c_testcase/payment.py" />
-      <option name="CLASS_NAME" value="Payment" />
-      <option name="METHOD_NAME" value="test_payment_yijiandaifa_enterprise" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest Payment.test_payment_qiugou_individual (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python project" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/b5c_automation/b5c_testcase/payment.py" />
-      <option name="CLASS_NAME" value="Payment" />
-      <option name="METHOD_NAME" value="test_payment_qiugou_individual" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.mysql">
     <configuration default="false" name="Unittest Payment.test_payment_qiugou_enterprise" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -507,6 +471,60 @@
       <module name="python project" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/b5c_automation/suite_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python project" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/b5c_automation/b5c_testcase/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/b5c_automation/b5c_testcase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python project" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/b5c_automation/b5c_testcase/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysql" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/b5c_automation/b5c_function" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python project" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/b5c_automation/b5c_function/mysql.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -720,19 +738,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest Payment.test_payment_qiugou_individual" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest Payment.test_payment_yijiandaifa_enterprise" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest Payment.test_payment_qiugou_individual (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest Payment.test_payment_qiugou_enterprise" />
-      <item index="4" class="java.lang.String" itemvalue="Python.suite_test" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest Payment.test_payment_qiugou_enterprise" />
+      <item index="1" class="java.lang.String" itemvalue="Python.suite_test" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test1" />
+      <item index="4" class="java.lang.String" itemvalue="Python.mysql" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.suite_test" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest Payment.test_payment_qiugou_enterprise" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest Payment.test_payment_qiugou_individual" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest Payment.test_payment_qiugou_individual (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest Payment.test_payment_yijiandaifa_enterprise" />
+        <item index="0" class="java.lang.String" itemvalue="Python.mysql" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.suite_test" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest Payment.test_payment_qiugou_enterprise" />
       </list>
     </recent_temporary>
   </component>
@@ -790,11 +808,11 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2171875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27349526" sideWeight="0.25833333" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27349526" sideWeight="0.26145834" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27349526" sideWeight="0.7416667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27349526" sideWeight="0.73854166" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -851,15 +869,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_testcase/log.txt" />
-    <entry file="file://E:/Python/Lib/unittest/runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2095">
-          <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/b5c_automation/report/TestReport_20160815202139.html" />
     <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_function/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1002,14 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="185" column="0" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_testcase/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1032,7 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1426">
           <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,24 +1041,14 @@
         <state relative-caret-position="621">
           <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
           <folding>
-            <element signature="e#24#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_function/public.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-          <folding>
-            <element signature="e#24#38#0" expanded="true" />
+            <element signature="e#24#72#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_business/payment_business.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
+        <state relative-caret-position="2047">
           <caret line="92" column="23" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="27" />
           <folding>
             <element signature="e#24#72#0" expanded="true" />
@@ -1068,7 +1058,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_elements/mainpage_elements.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
+        <state relative-caret-position="161">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding>
             <element signature="e#24#72#0" expanded="true" />
@@ -1078,7 +1068,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_testcase/payment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1089">
+        <state relative-caret-position="2599">
           <caret line="163" column="62" selection-start-line="163" selection-start-column="62" selection-end-line="163" selection-end-column="62" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
@@ -1097,11 +1087,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://E:/Python/Lib/site-packages/MySQLdb/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_testcase/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_function/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2369">
-          <caret line="112" column="36" selection-start-line="112" selection-start-column="36" selection-end-line="112" selection-end-column="36" />
+        <state relative-caret-position="954">
+          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_function/public.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <element signature="e#24#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_testcase/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="74" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="74" />
+          <folding>
+            <element signature="e#24#61#0" expanded="true" />
+            <marker date="1476002599247" expanded="true" signature="1507:1544" ph="SELECT * FRO... test" />
+            <marker date="1476002599247" expanded="true" signature="2017:2108" ph="INSERT INTO `mysql`.`test`... " />
+            <marker date="1476002599247" expanded="true" signature="2172:2228" ph="UPDATE `mysq... " />
+            <marker date="1476002599247" expanded="true" signature="2292:2333" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b5c_automation/b5c_function/mysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <element signature="e#24#61#0" expanded="true" />
+            <marker date="1476003243569" expanded="true" signature="1581:1618" ph="SELECT * FRO... test" />
+            <marker date="1476003243569" expanded="true" signature="2144:2235" ph="INSERT INTO `mysql`.`test`... " />
+            <marker date="1476003243569" expanded="true" signature="2353:2409" ph="UPDATE `mysq... " />
+            <marker date="1476003243569" expanded="true" signature="2527:2568" ph="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>
