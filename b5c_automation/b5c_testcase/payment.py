@@ -69,6 +69,8 @@ class Payment(unittest.TestCase):
         self.pay.login_yihuijin(u'李裕琪', u'310115198801110111')
 
         """获取易汇金金额"""
+        if ',' in total_amount:
+            total_amount = total_amount.replace(',', '')
         yihuijin_amount = self.pay.get_yihuijin_amount()
         if not yihuijin_amount == total_amount:
             logging.error('易汇金金额与待支付金额不同')
@@ -121,6 +123,8 @@ class Payment(unittest.TestCase):
         self.pay.enterprise_enter()
 
         """获取易汇金金额"""
+        if ',' in total_amount:
+            total_amount = total_amount.replace(',', '')
         yihuijin_amount = self.pay.get_yihuijin_amount()
         if not yihuijin_amount == total_amount:
             logging.error('易汇金金额与待支付金额不同')

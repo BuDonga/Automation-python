@@ -14,8 +14,8 @@ if __name__ == '__main__':
 
     """需要跑的case"""
     allCases = [
-        login.Login,
-        payment.Payment
+       # login.Login,
+        payment.Payment,
     ]
     testUnit = unittest.TestSuite()
     for s in allCases:
