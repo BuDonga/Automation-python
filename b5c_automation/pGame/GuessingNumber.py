@@ -37,6 +37,9 @@ if __name__ == '__main__':
     answer = ''.join(str(random_list))
     while key:
         input_value = raw_input('Please enter 4 numbers differently, you only got %d chance:' %index)
+        if input_value.lower() == 'answer':
+            print answer
+            continue
         if len(input_value) < 4:
             print 'Input number is out of range, please enter again'
             continue
