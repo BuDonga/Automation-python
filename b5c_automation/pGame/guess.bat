@@ -1,1 +1,2 @@
 python GuessingNumber.py
+pause
