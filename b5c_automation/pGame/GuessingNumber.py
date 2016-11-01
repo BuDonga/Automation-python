@@ -35,7 +35,6 @@ if __name__ == '__main__':
     c = pGame()
     random_list = c.generate_random_list()
     answer = ''.join(str(random_list))
-    print answer
     while key:
         input_value = raw_input('Please enter 4 numbers differently, you only got %d chance:' %index)
         if len(input_value) < 4:
